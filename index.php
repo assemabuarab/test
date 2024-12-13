@@ -894,37 +894,47 @@ main:not(.mobile) .ads .dl-btn-cont {
                    value="1734049975.321622fc8f1b4a865d0e100105b0e262e634521fde8dab435bd146e05c70a92e"
             >
             
-           <div class="download_link" id="download_link">
-                        <a class="preparing" href="#"><span>Preparing your download...</span></a>
-                        <a class="input popsok" aria-label="Download file" href="https://dlll.apkm.app/snapgold/2.60/GoldSC_V2.60_ByAbu3rab.apk" id="downloadButton"> Download file size (186MB) </a>
-                        <a class="starting" href="#"><span>Your download is starting...</span></a>
-                        <a class="retry" href="https://snap.abu3rab.com/">
-                            <span class="notranslate">Not working? <em>Repair your download</em></span>
-                        </a>
-                        <script type="text/javascript">
-                            (function () {
-                                var dl = document.getElementById("download_link");
-                                if (!dl) return;
-                                var init = false;
-                                function retry() {
-                                    dl.className += " retry";
-                                }
-                                function download() {
-                                    dl.className += " started";
-                                    window.dlStarted = true;
-                                    setTimeout(retry, 11000);
-                                }
-                                window.initDownload = function () {
-                                    if (init) return;
-                                    init = true;
-                                    dl.className = "download_link";
-                                    dl.onclick = download;
-                                };
-                                initDownload();
-                            })();
-                        
-</script>
-                    </div>
+            <div class="download_link" id="download_link">
+    <!-- IF THIS IS TRADITIONAL -->
+    <a class="preparing" href="#"><span>Preparing your download...</span></a>
+
+            <a class="input popsok"
+           aria-label="Download file"
+           href="https://download1638.mediafire.com/ufblngzrsb4grljnQrJy4TjgFo6bRq2j9hGbnCC0HIhmy0PSoV4xnjJnH0ABVEtJ1sFoW28lV7x5sANNNmKqKdSnbNkyHHYZA5mcAbD0WCr5t02_WkykR6ESYlEyRLwzdWpBYchflaRrwUb3FF0tGlcxlwy3cUY3H4yMQQS-Ojszvh4/efv6wrj75yk61g1/GoldHelpV2.txt"           id="downloadButton"
+           rel="nofollow">
+                Download (4.12KB)
+        </a>
+        <a class="starting" href="#"><span>Your download is starting...</span></a>
+    <a class="retry" href="https://www.mediafire.com/download_repair.php?qkey=efv6wrj75yk61g1&amp;dkey=ufblngzrsb4&amp;template=71&amp;origin=click_button">
+        <span class="notranslate">Download Started. <em>Repair your download</em></span>
+    </a>
+    <script type="text/javascript">
+     (function() {
+         var dl = document.getElementById('download_link');
+         if (!dl) return;
+         var init = false;
+
+         function retry() {
+             dl.className += ' retry';
+         };
+
+         function download() {
+             dl.className += ' started';
+             window.dlStarted = true;
+                             setTimeout(retry, 16000);
+                      };
+
+         window.initDownload = function() {
+             if (init) return;
+             init = true;
+             dl.className = 'download_link';
+             dl.onclick = download;
+         };
+
+                  initDownload();
+              })();
+    </script>
+</div>
 
             <a href="/customer_diagnosis/questionnaire.php?url=https%3A%2F%2Fwww.mediafire.com%2Ffile%2Fefv6wrj75yk61g1%2FGoldHelpV2.txt%2Ffile" class="download_test_link">
                 Download Diagnostic Tool
